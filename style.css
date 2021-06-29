@@ -1,0 +1,563 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display';
+  margin: 1px;
+  background: rgb(255, 237, 220);
+  padding: 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  color: #30292a;
+  background-image: url("images/poza1.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  margin: 2px;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(129, 115, 175);
+  padding: 15px 15px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  margin: 3px;
+  border-radius:20%;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+float: left;
+}
+
+input:checked + ul {
+  display: block;
+}
+.navbar img {
+  width: 60px;
+  margin-left: 15px;
+}
+
+.navbar label, .navbar input {
+display: none;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: linear-gradient(165deg, #f4a9a8, #b469f1, #ffeedb);
+  border-radius: 30%;
+  color: rgb(0, 0, 0);
+}
+
+.first, .second, .third {
+  padding: 10px;
+  background-color: #ffe7e1;
+  border-radius: 15px 50px;
+  box-shadow:  18px 18px 36px #dbccbd;
+}
+
+.first {
+  width: 50%;
+  margin-left: 50px;
+  margin-top: 15px;
+  transition: width 1s;
+  transition-timing-function: ease;
+}
+
+.second {
+  width: 70%;
+  margin-left: 350px;
+  margin-top: 20px;
+  transition: width 1s;
+  transition-timing-function: ease
+}
+
+.first:hover, .second:hover {
+  width: 60%;
+}
+
+.logo {
+  width: 60px;
+  height: 40px;
+  float: right;
+}
+
+.third {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.first:hover, .second:hover, .third:hover {
+  box-shadow: 10px 10px #d6c7d6;
+  }
+
+.quote::before {
+  content: open-quote;
+  font-size: 4em;
+  margin-top: 2px;
+  opacity: 0.7;
+  color: #9774a1;
+  line-height: normal;
+  }
+
+h2 {
+  color:rgb(143, 131, 183);
+  }
+
+.product {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px 50px;
+    background-color: #f9dfdc;
+}
+
+.images img {
+  height: 150px;
+}
+
+.product:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.product button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(143, 131, 183);
+  text-align: center;
+  width: 75%;
+  font-size: 18px;
+  border-radius: 15px 50px;
+}
+
+.product button:hover {
+  opacity: 0.8;
+}
+
+/*CAROUSEL SECTION*/
+#carousel .owl-item {
+border-radius: 5px;
+margin: 30px 0;
+text-align: center;
+}
+
+#carousel .owl-item:hover {
+display: flex;
+}
+
+#carousel h3 {
+font-size: 22px;
+color: #212529;
+font-weight: 600;
+margin: 15px 0 0
+}
+
+#carousel .price {
+font-size: 22px;
+font-weight: 600;
+color: #8d7099;
+}
+#carousel .owl-nav {
+text-align: center
+}
+#carousel .owl-prev, #carousel .owl-next {
+width: 50px;
+height: 40px;
+}
+
+#carousel .owl-next {
+margin-left: 30px;
+}
+
+/*FOOTER SECTION*/
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 4px;
+  background: rgb(186, 180, 207);
+  margin-bottom: 0;
+  border-radius:20%;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact {
+  font-family: 'Philosopher';
+  font-size: 14px;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 5px;
+}
+
+.contact img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+/* css for OUR TEAM. Clasa explanation e si in pagina SERVICES*/
+.explanation {
+padding: 10px;
+background-color: #ffe7e1;
+border-radius: 15px 50px;
+box-shadow:  18px 18px 36px #dbccbd;
+width: 80%;
+margin: 5% 10% 5% 10%;
+}
+
+.explanation:hover {
+  box-shadow: 10px 10px #d6c7d6;
+}
+
+.container {
+width: 100%;
+margin-top: 20px;
+text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(48, 196, 201, 0.274);
+  position: relative;
+  width: 25%;
+  height: 40%;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px 50px;
+  background-color: rgb(186, 180, 207);
+  float: left;
+  margin-left: 6%;
+  margin-bottom: 20px;
+  transform-origin: right;
+  transform: perspective(120px) rotateY(-5deg);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .social {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 50px rgba(201, 48, 188, 0.274);
+    transform: none;
+}
+
+.title {
+  color: rgb(88, 31, 126);
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px;
+  color: white;
+  background-color: rgb(143, 131, 183);
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+  border-radius: 15px 50px;
+}
+
+.card button:hover {
+  opacity: 0.8;
+  background-color: rgb(56, 28, 92);
+}
+
+/*CONTACT US*/
+.info {
+background-color: rgba(202, 172, 216, 0.4);
+margin-left: 30%;
+padding: 20px;
+width: 40%;
+border-radius: 15px 50px;
+margin-top: 30px;
+}
+
+.contactform h1, .contactform h2 {
+text-align: center;
+}
+
+.contactform input[type=text], input[type=password], select, textarea {
+width: 100%;
+padding: 14px;
+border-radius: 15px 50px;
+resize: vertical;
+}
+
+.contactform label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+color: rgb(86, 72, 139);
+}
+
+.contactform input[type=submit] {
+background-color: #7843be;
+color: white;
+padding: 15px 20px;
+border: none;
+border-radius: 30%;
+font-size: larger;
+}
+
+.contactform input[type=submit]:hover {
+background-color: #8d7da3
+}
+
+.texts {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+
+.inputs {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+
+.labels {
+display: flex;
+}
+
+.harta {
+  position: relative;
+  max-width: 70%;
+  overflow: hidden;
+  padding-top: 66.66%;
+  margin-top: 30px;
+  margin-left: 15%;
+  border-radius: 15px 50px;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/*SIGN IN*/
+.contactform img {
+  width: 30px;
+  height: 30px;
+  margin-left: 22%;
+  }
+
+  .sign {
+  text-align: center;
+  }
+
+  input {
+    text-align: center;
+  }
+
+/*SERVICES*/
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 100px;
+}
+.testimonials div {
+  padding: 3px;
+  text-align: center;
+  width: 28%;
+  border: 2px dotted rgb(88, 57, 117);
+  border-radius: 15px 50px;
+  box-shadow:  18px 18px 36px #dbccbd;
+}
+
+.testimonials div:hover {
+  border: none;
+  font-style: italic;
+}
+
+.testimonials div:nth-child(1):hover {
+  transform: scale(1.3) translate(-10%, -10%);
+}
+
+.testimonials div:nth-child(3):hover {
+  transform: scale(1.3) translate(10%, -10%);
+}
+
+.testimonials img {
+  width: 50px;
+  height: 50px;
+}
+
+.testimonials .name {
+  color:#4d188a;
+}
+
+.beautiful {
+  margin-top: 30px;
+  padding-top: 40px;
+  text-align: center;
+  color: #e5f0ef;
+  text-shadow: 1px rgb(216, 210, 202);
+  font-family: 'Merriweather';
+  font-size: large;
+  background-image: url("images/beautiful.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20%;
+  margin: 2px;
+}
+
+.beautiful img {
+width: 70px;
+height: 70px;
+}
+
+.beautiful p {
+text-shadow: black;
+}
+
+/*MOBILE VERSION*/
+
+@media screen and (max-width: 768px) {
+  .hero, .navbar {
+    flex-direction: column;
+  }
+
+  .navbar {
+    opacity: 0.8;
+  }
+
+  .navbar img {
+    height: 50px;
+    width: 50px;
+}
+
+  .navbar label {
+    display: block;
+    margin-top: 5px;
+}
+
+.navbar ul {
+    float: none;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+.navbar input:checked + ul {
+    display: block;
+}
+.navbar li {
+    float: none;
+    line-height: 30px;
+}
+
+.navbar a:hover {
+  background: none
+}
+
+.first, .second, .third {
+width: 100%;
+margin: 10px;
+}
+
+/*@media for contact/sign in*/
+.texts, .inputs, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+
+.contactform {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.info {
+width: 75%;
+margin: auto;
+}
+
+.labels {
+  flex-direction: column;
+}
+
+/*@media for Our team*/
+.card {
+float: none;
+width: 90%;
+height: 80%;
+margin-top: 5%;
+}
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  }
+
+  .contact {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /*@media for testimonials*/
+.testimonials {
+  padding-top: 20px;
+  align-items: center;
+  flex-direction: column;
+      }
+
+  .testimonials div {
+    margin-top: 10px;
+    width: 100%;
+    transform: none;
+  }
+
+  .testimonials div:nth-child(1):hover {
+    transform: none;
+  }
+
+  .testimonials div:nth-child(3):hover {
+    transform: none;
+  }
+
+}
